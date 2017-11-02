@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="loq-0M-KdW">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="512" translatesAutoresizingMaskIntoConstraints="NO" id="oBB-ke-92z">
+                                <rect key="frame" x="205" y="410" width="614" height="409.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="loq-0M-KdW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7M7-GO-yzU"/>
+                            <constraint firstItem="oBB-ke-92z" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="Nvw-Z1-h9l"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="loq-0M-KdW" secondAttribute="bottom" id="VNz-HA-aqP"/>
+                            <constraint firstItem="oBB-ke-92z" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="Vqp-fQ-oMr"/>
+                            <constraint firstItem="loq-0M-KdW" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="WRs-v0-ZLm"/>
+                            <constraint firstItem="oBB-ke-92z" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Zdw-Y6-Wi1"/>
+                            <constraint firstItem="oBB-ke-92z" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="eMY-hU-bby"/>
+                            <constraint firstAttribute="trailing" secondItem="loq-0M-KdW" secondAttribute="trailing" id="jbW-ik-o8K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="512" width="512" height="512"/>
+        <image name="splash" width="427" height="640"/>
+    </resources>
+</document>

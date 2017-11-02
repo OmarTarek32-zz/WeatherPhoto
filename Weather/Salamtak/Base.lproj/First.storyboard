@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="cairo_regular.otf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="cairo_semibold.otf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Salamtak" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGLogin" translatesAutoresizingMaskIntoConstraints="NO" id="RT6-kK-15v">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="w7k-PM-jbi">
+                                <rect key="frame" x="104" y="210" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="w7k-PM-jbi" secondAttribute="height" multiplier="1:1" id="Wzl-UT-PuN"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nLe-fo-9aX">
+                                <rect key="frame" x="41" y="479" width="332" height="155"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7L-mU-KHR" customClass="FancyButton" customModule="Salamtak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="45"/>
+                                        <color key="backgroundColor" red="0.99951738119125366" green="0.81589668989181519" blue="0.16657790541648865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RXH-gj-cXG">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <state key="normal" title="تسجيل الدخول">
+                                            <color key="titleColor" red="0.040269650518894196" green="0.42154848575592041" blue="0.56133145093917847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="SIR-3v-eF8" kind="show" id="bFi-Nf-16a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5m-9V-s1e" customClass="FancyButton" customModule="Salamtak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="332" height="45"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="إنشاء حساب جديد" image="new">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageTopPadding">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageBottomPadding">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="DJd-A9-g8f" kind="show" id="sLU-Sy-LCX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-V6-WBP" customClass="FancyButton" customModule="Salamtak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="110" width="332" height="45"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <state key="normal" title="دخول كـ زائر">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="Az8-hl-aU9" kind="show" id="46B-KX-TKH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="C5m-9V-s1e" firstAttribute="height" secondItem="H7L-mU-KHR" secondAttribute="height" id="pdR-Dy-yxo"/>
+                                    <constraint firstItem="LRN-V6-WBP" firstAttribute="height" secondItem="H7L-mU-KHR" secondAttribute="height" id="qSs-GT-dcl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w7k-PM-jbi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1AG-u4-Lgj"/>
+                            <constraint firstItem="nLe-fo-9aX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="4Ml-oz-Gve"/>
+                            <constraint firstItem="w7k-PM-jbi" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="4V3-K4-ZI8"/>
+                            <constraint firstItem="nLe-fo-9aX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T15-Lt-0bg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RT6-kK-15v" secondAttribute="bottom" id="UEQ-kV-XvB"/>
+                            <constraint firstItem="RT6-kK-15v" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZwO-6l-zfo"/>
+                            <constraint firstAttribute="trailing" secondItem="RT6-kK-15v" secondAttribute="trailing" id="fVA-UO-cmx"/>
+                            <constraint firstItem="w7k-PM-jbi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.85" id="jW0-wI-B6d"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nLe-fo-9aX" secondAttribute="bottom" multiplier="1.1" priority="999" id="vcr-sU-Sgf"/>
+                            <constraint firstItem="RT6-kK-15v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vz7-0K-OGB"/>
+                            <constraint firstItem="nLe-fo-9aX" firstAttribute="top" secondItem="w7k-PM-jbi" secondAttribute="bottom" multiplier="1.15" id="zR5-oE-Sxj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="atb-HW-ZIR">
+            <objects>
+                <viewController id="DJd-A9-g8f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lzc-pz-INT"/>
+                        <viewControllerLayoutGuide type="bottom" id="QT0-yK-9wM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8d-uX-yc5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGLogin" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-fb-i4U">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="NuK-YR-vV4">
+                                <rect key="frame" x="166" y="106" width="82" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NuK-YR-vV4" secondAttribute="height" multiplier="1:1" id="nqq-hN-mC8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مستخدم جديد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZ6-iR-mip">
+                                <rect key="frame" x="145.66666666666666" y="188" width="122.66666666666666" height="29.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="45"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-Ds-OPG">
+                                <rect key="frame" x="41" y="228.33333333333337" width="332" height="363"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الأسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4u-T0-MtN">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="9gR-KG-F6r">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="المدينة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuq-pC-CGv">
+                                        <rect key="frame" x="0.0" y="52.999999999999972" width="332" height="45"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الموبايل" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWp-Vt-2d0">
+                                        <rect key="frame" x="0.0" y="105.99999999999997" width="332" height="45"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="بريد الكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46R-l0-XmS">
+                                        <rect key="frame" x="0.0" y="158.99999999999997" width="332" height="45"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Jg-Um-HXQ">
+                                        <rect key="frame" x="0.0" y="211.99999999999997" width="332" height="45.000000000000028"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اعادة كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ovd-Ts-A3z">
+                                        <rect key="frame" x="0.0" y="265" width="332" height="45"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIo-Qb-sDZ">
+                                        <rect key="frame" x="0.0" y="318" width="332" height="45"/>
+                                        <color key="backgroundColor" red="0.99387222529999997" green="0.69566804169999996" blue="0.1678340435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <state key="normal" title="دخول">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="Az8-hl-aU9" kind="show" id="gU7-1s-uOQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Jg-Um-HXQ" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="9uf-LH-8Fr"/>
+                                    <constraint firstItem="46R-l0-XmS" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="Esj-6U-v4L"/>
+                                    <constraint firstItem="iuq-pC-CGv" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="NUJ-dU-wVZ"/>
+                                    <constraint firstItem="Ovd-Ts-A3z" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="hrd-sW-cxu"/>
+                                    <constraint firstItem="AIo-Qb-sDZ" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="que-C8-HJU"/>
+                                    <constraint firstItem="ZWp-Vt-2d0" firstAttribute="height" secondItem="L4u-T0-MtN" secondAttribute="height" id="ywv-4g-Xqy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hWM-Ds-OPG" firstAttribute="centerX" secondItem="r8d-uX-yc5" secondAttribute="centerX" id="0cE-S7-9mA"/>
+                            <constraint firstItem="hWM-Ds-OPG" firstAttribute="width" secondItem="r8d-uX-yc5" secondAttribute="width" multiplier="0.8" id="1Cr-zN-vHK"/>
+                            <constraint firstItem="hWM-Ds-OPG" firstAttribute="top" secondItem="HZ6-iR-mip" secondAttribute="bottom" multiplier="1.05" id="6cl-zp-nyG"/>
+                            <constraint firstAttribute="trailing" secondItem="fCg-fb-i4U" secondAttribute="trailing" id="8aS-AP-2qQ"/>
+                            <constraint firstAttribute="bottom" secondItem="fCg-fb-i4U" secondAttribute="bottom" id="HWB-2M-ql2"/>
+                            <constraint firstItem="NuK-YR-vV4" firstAttribute="width" secondItem="r8d-uX-yc5" secondAttribute="width" multiplier="0.2" id="amg-bm-PM8"/>
+                            <constraint firstItem="fCg-fb-i4U" firstAttribute="top" secondItem="r8d-uX-yc5" secondAttribute="top" id="d0K-u1-OS2"/>
+                            <constraint firstItem="HZ6-iR-mip" firstAttribute="centerX" secondItem="r8d-uX-yc5" secondAttribute="centerX" id="hfY-zp-pBg"/>
+                            <constraint firstItem="HZ6-iR-mip" firstAttribute="top" secondItem="NuK-YR-vV4" secondAttribute="bottom" id="izc-As-DaS"/>
+                            <constraint firstItem="QT0-yK-9wM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hWM-Ds-OPG" secondAttribute="bottom" constant="8" id="kYo-qN-3zf"/>
+                            <constraint firstItem="NuK-YR-vV4" firstAttribute="centerY" secondItem="r8d-uX-yc5" secondAttribute="centerY" multiplier="0.4" id="kfS-wr-Vbj"/>
+                            <constraint firstItem="fCg-fb-i4U" firstAttribute="leading" secondItem="r8d-uX-yc5" secondAttribute="leading" id="qpE-UO-vbw"/>
+                            <constraint firstItem="NuK-YR-vV4" firstAttribute="centerX" secondItem="r8d-uX-yc5" secondAttribute="centerX" id="zCI-wa-h9a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xkb-hs-Vle" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="892"/>
+        </scene>
+        <!--homeVC-->
+        <scene sceneID="TOj-on-ZVk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" referencedIdentifier="homeVC" id="Az8-hl-aU9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okh-h4-52E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="892"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bRc-aB-whd">
+            <objects>
+                <viewController id="SIR-3v-eF8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cS2-Pk-aku"/>
+                        <viewControllerLayoutGuide type="bottom" id="wNs-3F-kGe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="07a-0D-fZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BGLogin" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-x7-Vbf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xaL-gv-g0H">
+                                <rect key="frame" x="176" y="190" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xaL-gv-g0H" secondAttribute="height" multiplier="1:1" id="FS0-QG-y44"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دخول" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyL-1s-qnW">
+                                <rect key="frame" x="175.33333333333334" y="251.99999999999997" width="64.333333333333343" height="39.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="45"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-uC-TcQ">
+                                <rect key="frame" x="41" y="320.66666666666669" width="332" height="155"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اسم المستخدم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-E4-4Hf">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="bkZ-tl-dZy">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                            </constraint>
+                                        </constraints>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JcC-gP-Et6">
+                                        <rect key="frame" x="0.0" y="55" width="332" height="45"/>
+                                        <color key="textColor" red="0.040269650519999999" green="0.42154848579999998" blue="0.56133145090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-kw-2wH" customClass="FancyButton" customModule="Salamtak" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="110" width="332" height="45"/>
+                                        <color key="backgroundColor" red="0.99387222528457642" green="0.69566804170608521" blue="0.16783404350280762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                        <state key="normal" title="دخول">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="27"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="Az8-hl-aU9" kind="show" id="old-le-sll"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JcC-gP-Et6" firstAttribute="height" secondItem="t2O-E4-4Hf" secondAttribute="height" id="LSW-23-INK"/>
+                                    <constraint firstItem="z6A-kw-2wH" firstAttribute="height" secondItem="JcC-gP-Et6" secondAttribute="height" id="hhW-8W-grF"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-OV-gw9">
+                                <rect key="frame" x="20" y="483.66666666666669" width="85" height="45.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MOf-wt-noZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                <state key="normal" title="انشاء حساب جديد">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="23"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIP-aq-Oj8">
+                                <rect key="frame" x="273" y="483.66666666666669" width="121" height="45.000000000000057"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="xiZ-v3-AVH">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="13"/>
+                                <state key="normal" title="هل نسيت كلمة المرور" image="error">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="23"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1U2-uC-TcQ" firstAttribute="centerX" secondItem="07a-0D-fZ3" secondAttribute="centerX" id="Gq6-eA-OdH"/>
+                            <constraint firstItem="xaL-gv-g0H" firstAttribute="width" secondItem="TAP-x7-Vbf" secondAttribute="width" multiplier="0.15" id="Gw6-gA-pSk"/>
+                            <constraint firstItem="ypm-OV-gw9" firstAttribute="leading" secondItem="07a-0D-fZ3" secondAttribute="leadingMargin" id="HHy-eI-dln"/>
+                            <constraint firstAttribute="trailing" secondItem="TAP-x7-Vbf" secondAttribute="trailing" id="LSg-kI-qkS"/>
+                            <constraint firstItem="1U2-uC-TcQ" firstAttribute="width" secondItem="07a-0D-fZ3" secondAttribute="width" multiplier="0.8" id="M04-3P-OdM"/>
+                            <constraint firstItem="wNs-3F-kGe" firstAttribute="top" secondItem="TAP-x7-Vbf" secondAttribute="bottom" id="Qv6-Ig-foL"/>
+                            <constraint firstItem="vIP-aq-Oj8" firstAttribute="top" secondItem="z6A-kw-2wH" secondAttribute="bottom" constant="8.5" id="R6o-Wt-sz5"/>
+                            <constraint firstItem="xaL-gv-g0H" firstAttribute="centerX" secondItem="07a-0D-fZ3" secondAttribute="centerX" id="Sbv-LT-WZu"/>
+                            <constraint firstItem="TAP-x7-Vbf" firstAttribute="leading" secondItem="07a-0D-fZ3" secondAttribute="leading" id="T2x-9s-Jmc"/>
+                            <constraint firstItem="ypm-OV-gw9" firstAttribute="centerY" secondItem="vIP-aq-Oj8" secondAttribute="centerY" id="TSq-wI-QUK"/>
+                            <constraint firstItem="TAP-x7-Vbf" firstAttribute="top" secondItem="07a-0D-fZ3" secondAttribute="top" id="VrJ-NT-l2i"/>
+                            <constraint firstItem="wNs-3F-kGe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vIP-aq-Oj8" secondAttribute="bottom" id="YXv-jg-dvw"/>
+                            <constraint firstItem="vIP-aq-Oj8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ypm-OV-gw9" secondAttribute="trailing" constant="8" id="cfb-Uy-x4l"/>
+                            <constraint firstItem="1U2-uC-TcQ" firstAttribute="top" secondItem="TyL-1s-qnW" secondAttribute="bottom" multiplier="1.1" id="f3k-tH-hkz"/>
+                            <constraint firstItem="xaL-gv-g0H" firstAttribute="centerY" secondItem="07a-0D-fZ3" secondAttribute="centerY" multiplier="0.6" id="gYz-eg-enE"/>
+                            <constraint firstItem="TyL-1s-qnW" firstAttribute="centerX" secondItem="07a-0D-fZ3" secondAttribute="centerX" id="nO8-yR-h57"/>
+                            <constraint firstItem="TyL-1s-qnW" firstAttribute="top" secondItem="xaL-gv-g0H" secondAttribute="bottom" id="xvk-2V-fA6"/>
+                            <constraint firstItem="vIP-aq-Oj8" firstAttribute="trailing" secondItem="07a-0D-fZ3" secondAttribute="trailingMargin" id="y8D-le-BjO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ya5-Py-2xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BGLogin" width="426" height="640"/>
+        <image name="error" width="29" height="29"/>
+        <image name="logLogo" width="29" height="29"/>
+        <image name="logo" width="170" height="170"/>
+        <image name="new" width="29" height="29"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="old-le-sll"/>
+    </inferredMetricsTieBreakers>
+</document>

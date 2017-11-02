@@ -1,0 +1,13 @@
+//
+//  HomeCollectionViewCell.swift
+//  Weather
+//
+//  Created by omar tarek on 11/1/17.
+//  Copyright © 2017 omartarek. All rights reserved.
+//
+
+import UIKit
+
+class HomeCollectionViewCell: UICollectionViewCell {
+    
+}
